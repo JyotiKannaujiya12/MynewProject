@@ -1,0 +1,30 @@
+<html>
+<head></head>
+	<body onload="myarray()">
+	<script>
+		function myarray()
+		{
+			var arr=[10,20,30,40,50];
+			//alert(arr.length);
+			//alert(arr[4]);
+			for(i=0;i<arr.length;i++)
+				{
+					//alert(arr[i]);
+					text="<input type='text' id='txt"+i+"' value='"+arr[i]+"'/>";
+					document.getElementById("dv").innerHTML+="Display text"
++(i+1)+"</br>"+text+"</br>";				}
+	
+		var t=document.getElementById("txt1").value;
+		
+		alert(t);
+		}
+		
+		</script>
+	<div id="dv"></div>
+	
+	
+	
+	</body>
+
+
+</html>

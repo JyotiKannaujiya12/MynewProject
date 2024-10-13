@@ -1,0 +1,43 @@
+<html>
+<head>
+	<style>
+		input{
+			display: inline;
+			text-align: center;
+		}
+	
+	</style>
+	
+	
+	</head>
+	<body onload="menu()">
+	<script>
+		function menu()
+		{
+			var arr=["Home","About Us","Contact Us","Login","Register","Carrie"];
+			dd1="<select id='dd1' onchange='fire()'>";
+			dd1+="<option>select option</option>";
+			for(i=0;i<arr.length;i++)
+				{
+					text="<input type='text' id='txt"+i+"' value='"+arr[i]+"'/>";
+					dd1+="<option>"+arr[i]+"</option>";
+					document.getElementById("dv").innerHTML+=""+text+"";
+				}
+			
+			dd1+="</select>";
+	document.getElementById("dv").innerHTML+=dd1;		
+			
+		}
+		function fire()
+		{
+			var red=document.getElementById("dd1").value;
+			document.getElementById("dv2").style.backgroundColor=red;
+		}
+		
+	</script>
+		<div id="dv"></div>
+	<div id="dv2" ></div>
+	
+	</body>
+
+</html>

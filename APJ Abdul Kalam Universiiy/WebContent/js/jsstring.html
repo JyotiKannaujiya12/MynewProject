@@ -1,0 +1,43 @@
+<html>
+<head></head>
+	<body>
+		Enter Name
+		<input type="text" id="txtname"/>
+		<button onclick="check()">
+		Go
+		</button>
+		<br>
+<!--
+		<span id="sp"></span>
+		<span id="sp1"></span>
+		<span id="sp2">IndexOf:</span><br>
+		<span id="sp3">LastIndexOf</span><br>
+-->
+		<span id="sp4">substring():</span><br>
+		<span id="sp5">substring():</span>
+	<script>
+		function check()
+		{
+			var txt=document.getElementById("txtname").value;
+			var up=txt.toUpperCase();
+			var lwr=txt.toLowerCase();
+			//document.getElementById("sp").innerHTML="Welcome !"+up;
+			//document.getElementById("sp1").innerHTML="Welcome !"+lwr;
+			//document.getElementById("sp2").innerHTML=txt.indexOf(" ");
+			//document.getElementById("sp3").innerHTML=txt.lastIndexOf(" ");
+			document.getElementById("sp4").innerHTML=txt.substring(4);
+			document.getElementById("sp5").innerHTML=txt.substring(5,10);
+		}
+		
+		
+		
+		</script>
+	
+	
+	
+	
+	</body>
+
+
+
+</html>

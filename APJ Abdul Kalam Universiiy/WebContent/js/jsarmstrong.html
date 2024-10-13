@@ -1,0 +1,33 @@
+<html>
+<head></head>
+	<body>
+	<h2>Armstrong Number</h2>
+	<hr>
+	Enter Number<br>
+		<input type="text" id="txt1"/>
+		<input type="button" id="btn" onclick="armstrong()" value="print"/>
+	<script>
+	function armstrong()
+		{
+			var arm=0,a,num,tamp;
+		num=Number(document.getElementById("txt1").value);    
+			temp=num;
+			while(temp>0)
+				{
+					a=temp%10;
+					temp=parseInt(temp/10);
+					arm=arm+a*a*a;
+				}
+			if(arm==num)
+				{
+					document.write("armstrong ")
+				}
+			else{
+				document.write(" not  armstrong ")
+			}
+		}
+	
+	
+	</script>
+	</body>
+</html>

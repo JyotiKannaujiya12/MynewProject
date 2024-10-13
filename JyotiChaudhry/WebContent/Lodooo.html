@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Loodo</title>
+
+
+<style>
+#boundry
+{
+height:800px;
+width:800px;
+background:cyan;
+margin-left:20%;
+border:30px solid black;
+}
+#a
+{
+height:300px;
+width:800px;
+background:white;
+}
+#a1
+{
+height:200px;
+width:200px;
+background:white;
+float:left;
+border:50px solid green;
+}
+#a2
+{
+height:300px;
+width:200px;
+background:white;
+float:left;
+}
+#a3
+{
+height:200px;
+width:200px;
+background:white;
+float:left;
+border:50px solid yellow;
+}
+#b
+{
+height:200px;
+width:800px;
+background:white;
+}
+#b1
+{
+height:200px;
+width:300px;
+background:white;
+float:left;
+}
+#b2
+{
+height:200px;
+width:200px;
+background:cyan;
+float:left;
+}
+#z
+{
+height:0px;
+width:0px;
+background:teal;
+margin:auto;
+margin-top:px;
+margin-left:px;
+border-left:100px solid green;
+border-right:100px solid blue;
+border-top:100px solid yellow;
+border-bottom:100px solid red;
+}
+
+#b3
+{
+height:200px;
+width:300px;
+background:white;
+float:left;
+}
+#c
+{
+height:300px;
+width:800px;
+background:white;
+}
+#c1
+{
+height:200px;
+width:200px;
+background:white;
+float:left;
+border:50px solid red;
+}
+#c2
+{
+height:300px;
+width:200px;
+background:white;
+float:left;
+}
+#c3
+{
+height:200px;
+width:200px;
+background:white;
+float:left;
+border:50px solid blue;
+}
+#innergreen
+{
+height:100px;
+width:100px;
+background:white;
+margin:50px;
+}
+#greenrow1
+{
+height:43px;
+width:100px;
+background:white;
+}
+#greenrow2
+{
+height:43px;
+width:100px;
+background:white;
+margin-top:14px;
+}
+#gcol1
+{
+height:43px;
+width:43px;
+background:green;
+float:left;
+}
+#gcol2
+{
+height:43px;
+width:43px;
+background:green;
+float:left;
+margin-left:14px;
+}
+#gcol3
+{
+height:43px;
+width:43px;
+background:green;
+float:left;
+}
+#gcol4
+{
+height:43px;
+width:43px;
+background:green;
+float:left;
+margin-left:14px;
+}
+#inneryellow
+{
+height:100px;
+width:100px;
+background:white;
+margin:50px;
+}
+#yellowrow1
+{
+height:43px;
+width:100px;
+background:white;
+}
+#yellowrow2
+{
+height:43px;
+width:100px;
+background:white;
+margin-top:14px;
+}
+#ycol1
+{
+height:43px;
+width:43px;
+background:yellow;
+float:left;
+}
+#ycol2
+{
+height:43px;
+width:43px;
+background:yellow;
+float:left;
+margin-left:14px;
+}
+#ycol3
+{
+height:43px;
+width:43px;
+background:yellow;
+float:left;
+}
+#ycol4
+{
+height:43px;
+width:43px;
+background:yellow;
+float:left;
+margin-left:14px;
+}
+#innerred
+{
+height:100px;
+width:100px;
+background:white;
+margin:50px;
+}
+#redrow1
+{
+height:43px;
+width:100px;
+background:white;
+}
+#redrow2
+{
+height:43px;
+width:100px;
+background:white;
+margin-top:14px;
+}
+#rcol1
+{
+height:43px;
+width:43px;
+background:red;
+float:left;
+}
+#rcol2
+{
+height:43px;
+width:43px;
+background:red;
+float:left;
+margin-left:14px;
+}
+#rcol3
+{
+height:43px;
+width:43px;
+background:red;
+float:left;
+}
+#rcol4
+{
+height:43px;
+width:43px;
+background:red;
+float:left;
+margin-left:14px;
+}
+#innerblue
+{
+height:100px;
+width:100px;
+background:white;
+margin:50px;
+}
+#bluerow1
+{
+height:43px;
+width:100px;
+background:white;
+}
+#bluerow2
+{
+height:43px;
+width:100px;
+background:white;
+margin-top:14px;
+}
+#bcol1
+{
+height:43px;
+width:43px;
+background:blue;
+float:left;
+}
+#bcol2
+{
+height:43px;
+width:43px;
+background:blue;
+float:left;
+margin-left:14px;
+}
+#bcol3
+{
+height:43px;
+width:43px;
+background:blue;
+float:left;
+}
+#bcol4
+{
+height:43px;
+width:43px;
+background:blue;
+float:left;
+margin-left:14px;
+}
+#blocka
+{
+height:48.33px;
+width:200px;
+}
+#blockb
+{
+height:48.33px;
+width:20opx;
+margin-top:2px;
+}
+#blockc
+{
+height:48.33px;
+width:200px;
+margin-top:2px;
+}
+#blockd
+{
+height:48.33px;
+width:200px;
+margin-top:2px;
+}
+#blocke
+{
+height:48.33px;
+width:200px;
+margin-top:2px;
+}
+#blockf
+{
+height:48.33px;
+width:200px;
+margin-top:2px;
+}
+#blocka1
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blocka2
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blocka3
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+
+}
+#blockb1
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+
+}
+#blockb2
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+background:yellow;
+}
+#blockb3
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+background:yellow;
+}
+#blockc1
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+
+}
+#blockc2
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+background:yellow;
+}
+#blockc3
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockd1
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+
+}
+#blockd2
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+background:yellow;
+}
+#blockd3
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blocke1
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+
+}
+#blocke2
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+background:yellow;
+}
+#blocke3
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockf1
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+
+}
+#blockf2
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+background:yellow;
+}
+#blockf3
+{
+height:47.33px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockg
+{
+height:66.66px;
+width:300px;
+}
+#blockh
+{
+height:66.66px;
+width:300px;
+background:green;
+}
+#blocki
+{
+height:66.66px;
+width:300px;
+}
+#blockg1
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockg2
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+background:green;
+}
+#blockg3
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockg4
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockg5
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockg6
+{
+height:64.66px;
+width:48.83px;
+border:1px solid black;
+float:left;
+}
+#blockh1
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+background:white;
+}
+#blockh2
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockh3
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockh4
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockh5
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockh6
+{
+height:64.66px;
+width:48.83px;
+border:1px solid black;
+float:left;
+}
+#blocki1
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blocki2
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blocki3
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blocki4
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blocki5
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blocki6
+{
+height:64.66px;
+width:48.83px;
+border:1px solid black;
+float:left;
+}
+#blockj
+{
+height:66.66px;
+width:300px;
+}
+#blockk
+{
+height:66.66px;
+width:300px;
+background:blue;
+}
+#blockl
+{
+height:66.66px;
+width:300px;
+}
+#blockj1
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockj2
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockj3
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockj4
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockj5
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockj6
+{
+height:64.66px;
+width:48.83px;
+border:1px solid black;
+float:left;
+}
+#blockk1
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockk2
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockk3
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockk4
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockk5
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockk6
+{
+height:64.66px;
+width:48.83px;
+border:1px solid black;
+float:left;
+background:white;
+}
+#blockl1
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockl2
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockl3
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockl4
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+}
+#blockl5
+{
+height:64.66px;
+width:47.83px;
+border:1px solid black;
+float:left;
+background:blue;
+}
+#blockl6
+{
+height:64.66px;
+width:48.83px;
+border:1px solid black;
+float:left;
+background:white;
+}
+#blockm
+{
+height:50px;
+width:200px;
+}
+#blockn
+{
+height:50px;
+width:200px;
+}
+#blocko
+{
+height:50px;
+width:200px;
+}
+#blockp
+{
+height:50px;
+width:200px;
+}
+#blockq
+{
+height:50px;
+width:200px;
+}
+#blockr
+{
+height:50px;
+width:200px;
+}
+#blockm1
+{
+height:47.83px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockm2
+{
+height:47.83px;
+width:64.33px;
+float:left;
+background:red;
+border:1px solid black;
+}
+#blockm3
+{
+height:47.83px;
+width:65.33px;
+float:left;
+border:1px solid black;
+}
+#blockn1
+{
+height:47.83px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockn2
+{
+height:47.83px;
+width:64.33px;
+float:left;
+background:red;
+border:1px solid black;
+}
+#blockn3
+{
+height:47.83px;
+width:65.33px;
+float:left;
+border:1px solid black;
+}
+#blocko1
+{
+height:47.83px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blocko2
+{
+height:47.83px;
+width:64.33px;
+float:left;
+background:red;
+border:1px solid black;
+}
+#blocko3
+{
+height:47.83px;
+width:65.33px;
+float:left;
+border:1px solid black;
+}
+#blockp1
+{
+height:47.83px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockp2
+{
+height:47.83px;
+width:64.33px;
+float:left;
+background:red;
+border:1px solid black;
+}
+#blockp3
+{
+height:47.83px;
+width:65.33px;
+float:left;
+border:1px solid black;
+}
+#blockq1
+{
+height:47.83px;
+width:64.33px;
+float:left;
+background:red;
+border:1px solid black;
+}
+#blockq2
+{
+height:47.83px;
+width:64.33px;
+float:left;
+background:red;
+border:1px solid black;
+}
+#blockq3
+{
+height:47.83px;
+width:65.33px;
+float:left;
+border:1px solid black;
+}
+#blockr1
+{
+height:47.83px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockr2
+{
+height:47.83px;
+width:64.33px;
+float:left;
+border:1px solid black;
+}
+#blockr3
+{
+height:47.83px;
+width:65.33px;
+float:left;
+border:1px solid black;
+}
+#go1
+{
+height:25px;
+width:50px;
+border:2px solid black;
+text-align:center;
+margin-top:9px;
+margin-left:6px;
+}
+#go4
+{
+height:25px;
+width:50px;
+border:2px solid black;
+text-align:center;
+margin-top:9px;
+margin-left:6px;
+}
+#go2
+{
+height:50px;
+width:25px;
+border:2px solid black;
+text-align:center;
+margin-top:6px;
+margin-left:9px;
+}
+#go3
+{
+height:50px;
+width:25px;
+border:2px solid black;
+text-align:center;
+margin-top:6px;
+margin-left:9px;
+}
+</style>
+</head>
+<body>
+<div id="boundry">
+<div id="a">
+<div id="a1">
+<div id="innergreen">
+<div id="greenrow1">
+<div id="gcol1"></div>
+<div id="gcol2"></div>
+</div>
+<div id="greenrow2">
+<div id="gcol3"></div>
+<div id="gcol4"></div>
+</div>
+</div>
+</div>
+<div id="a2">
+<div id="blocka">
+<div id="blocka1"></div>
+<div id="blocka2"></div>
+<div id="blocka3"></div>
+</div>
+<div id="blockb">
+
+<div id="blockb1"></div>
+<div id="blockb2"></div>
+<div id="blockb3"><div id="go1">START</div></div></div>
+<div id="blockc">
+<div id="blockc1"><div id="stop1" style="transform:rotate(45deg);height:30px;width:30px; border:2px solid black; margin-left:12px;margin-top:5px;">
+<div id="stop11" style="height:20px;width:20px; border:2px solid black; margin-left:2.5px;margin-top:2.5px;">
+<div id="stop111" style="height:10px;width:10px; border:2px solid black; margin-left:3px;margin-top:3px;"></div>
+</div>
+</div></div>
+<div id="blockc2"></div>
+<div id="blockc3"></div>
+</div>
+<div id="blockd">
+<div id="blockd1"></div>
+<div id="blockd2"></div>
+<div id="blockd3"></div>
+</div>
+<div id="blocke">
+<div id="blocke1"></div>
+<div id="blocke2"></div>
+<div id="blocke3"></div>
+</div>
+<div id="blockf">
+<div id="blockf1"></div>
+<div id="blockf2"></div>
+<div id="blockf3"></div>
+</div>
+</div>
+<div id="a3">
+<div id="inneryellow">
+<div id="yellowrow1">
+<div id="ycol1"></div>
+<div id="ycol2"></div>
+</div>
+<div id="yellowrow2">
+<div id="ycol3"></div>
+<div id="ycol4"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="b">
+<div id="b1">
+<div id="blockg">
+<div id="blockg1"></div>
+<div id="blockg2"><div id="go2">START</div></div>
+<div id="blockg3"></div>
+<div id="blockg4"></div>
+<div id="blockg5"></div>
+<div id="blockg6"></div>
+</div>
+<div id="blockh">
+<div id="blockh1"></div>
+<div id="blockh2"></div>
+<div id="blockh3"></div>
+<div id="blockh4"></div>
+<div id="blockh5"></div>
+<div id="blockh6"></div>
+</div>
+<div id="blocki">
+<div id="blocki1"></div>
+<div id="blocki2"></div>
+<div id="blocki3"><div id="stop2" style=" transform:rotate(45deg);height:30px; width:30px;margin-left:7px;margin-top:13px; border:2px solid black">
+<div id="stop11" style="height:20px;width:20px; border:2px solid black; margin-left:2.5px;margin-top:2.5px;">
+<div id="stop111" style="height:10px;width:10px; border:2px solid black; margin-left:3px;margin-top:3px;"></div>
+</div>
+</div></div>
+<div id="blocki4"></div>
+<div id="blocki5"></div>
+<div id="blocki6"></div>
+</div>
+</div>
+<div id="b2"><div id="z"></div></div>
+<div id="b3">
+<div id="blockj">
+<div id="blockj1"></div>
+<div id="blockj2"></div>
+<div id="blockj3"></div>
+<div id="blockj4"><div id="stop3" style=" transform:rotate(45deg);height:30px; width:30px;margin-left:7px;margin-top:13px; border:2px solid black">
+<div id="stop11" style="height:20px;width:20px; border:2px solid black; margin-left:2.5px;margin-top:2.5px;">
+ <div id="stop111" style="height:10px;width:10px; border:2px solid black; margin-left:3px;margin-top:3px;"></div>
+</div></div></div>
+<div id="blockj5"></div>
+<div id="blockj6"></div>
+</div>
+<div id="blockk">
+<div id="blockk1"></div>
+<div id="blockk2"></div>
+<div id="blockk3"></div>
+<div id="blockk4"></div>
+<div id="blockk5"></div>
+<div id="blockk6"></div>
+</div>
+<div id="blockl">
+<div id="blockl1"></div>
+<div id="blockl2"></div>
+<div id="blockl3"></div>
+<div id="blockl4"></div>
+<div id="blockl5"><div id="go3">START</div></div>
+<div id="blockl6"></div>
+</div>
+</div>
+</div>
+<div id="c">
+<div id="c1">
+<div id="innerred">
+<div id="redrow1">
+<div id="rcol1"></div>
+<div id="rcol2"></div>
+</div>
+<div id="redrow2">
+<div id="rcol3"></div>
+<div id="rcol4"></div>
+</div>
+</div>
+</div>
+<div id="c2">
+<div id="blockm">
+<div id="blockm1"></div>
+<div id="blockm2"></div>
+<div id="blockm3"></div>
+</div>
+<div id="blockn">
+<div id="blockn1"></div>
+<div id="blockn2"></div>
+<div id="blockn3"></div>
+</div>
+<div id="blocko">
+<div id="blocko1"></div>
+<div id="blocko2"></div>
+<div id="blocko3"></div>
+</div>
+<div id="blockp">
+<div id="blockp1"></div>
+<div id="blockp2"></div>
+<div id="blockp3"><div id="stop4" style=" transform:rotate(45deg);height:30px; width:30px;margin-left:15px;margin-top:8px; border:2px solid black">
+<div id="stop11" style="height:20px;width:20px; border:2px solid black; margin-left:2.5px;margin-top:2.5px;">
+ <div id="stop111" style="height:10px;width:10px; border:2px solid black; margin-left:3px;margin-top:3px;"></div>
+</div></div></div>
+</div>
+<div id="blockq">
+<div id="blockq1"><div id="go4">START</div></div>
+<div id="blockq2"></div>
+<div id="blockq3"></div>
+</div>
+<div id="blockr">
+<div id="blockr1"></div>
+<div id="blockr2"></div>
+<div id="blockr3"></div>
+</div>
+</div>
+<div id="c3">
+<div id="innerblue">
+<div id="bluerow1">
+<div id="bcol1"></div>
+<div id="bcol2"></div>
+</div>
+<div id="bluerow2">
+<div id="bcol3"></div>
+<div id="bcol4"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	
+	
+	</head>
+
+<body onload="dropdwn()">
+	<script>
+	
+	function dropdwn()
+		{
+			var arr=["red","blue","teal","orange","pink","maroon"];
+			clr="<select id='dd1' onchange='fire()'>";
+			clr+="<option>select Color</option>";	
+			for(i=0;i<arr.length;i++)
+				{
+					
+				clr+="<option>"+arr[i]+"</option>";
+				}
+			
+			clr+="</select>";
+			document.getElementById("dv").innerHTML+=clr;
+		}
+		function fire()
+		{
+			var d1=document.getElementById("dd1").value;
+			document.getElementById("dv2").style.backgroundColor=d1;
+		}
+		
+	
+	
+	</script>
+	<div id="dv"></div>
+	<br/>
+	<div id="dv2" style="height: 200px; width: 200px; border: 1px solid black"></div>
+	
+	</body>
+
+
+</html>

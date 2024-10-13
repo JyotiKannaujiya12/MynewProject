@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var num=121;
+var rem;
+var rev=0;
+var num2=num;
+while(num!=0)
+	{
+	rem=num%10;
+	rev=rev*10+rem;
+	num=Math.floor(num/10);
+	}
+	if(num2==rev)
+		{
+	document.write("Number is palendrom:"+rev);
+		}
+	else 
+	{
+		document.write("Number is not a palindrom:"+rev)
+	}
+</script>
+</body>
+</html>

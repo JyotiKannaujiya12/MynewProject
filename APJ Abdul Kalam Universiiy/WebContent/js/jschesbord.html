@@ -1,0 +1,57 @@
+<html>
+<head></head>
+	<body onload="bord()">
+	<script>
+		function bord()
+		{
+			tbl="<table border='1' cellpadding='30'>";
+			for(i=0;i<8;i++)
+				{
+				tbl+="<tr>";
+				if(i%2==0)	
+					{
+						for(j=0;j<8;j++)
+							{
+								if(j%2==0)
+									{
+										tbl+="<td bgcolor='white'></td>";
+									}
+								else
+									{
+										tbl+="<td bgcolor='black'></td>";
+									}
+							}
+					}
+					else
+					{
+						for(j=0;j<8;j++)
+							{
+								if(j%2==0)
+									{
+										tbl+="<td bgcolor='black'></td>";
+									}
+								else
+									{
+										tbl+="<td bgcolor='white'></td>";
+									}
+							}
+					}
+					tbl+="</tr>";
+				}
+							tbl+="</table>";
+							document.write(tbl);
+		}
+		
+		</script>
+	
+	</body>
+
+
+
+
+
+
+
+
+
+</html>

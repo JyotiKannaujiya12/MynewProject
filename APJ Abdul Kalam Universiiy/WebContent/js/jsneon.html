@@ -1,0 +1,39 @@
+<html>
+<head>
+	</head>
+	<body>
+	<h2>Neon Number</h2>
+		<hr>
+		Enter Number<br>
+		<input type="text" id="txt1"/>
+		<input type="button" id="btn" onclick="neon()" value="print"/>
+	<script>
+		function neon()
+		{
+			var nen=0,a,b,num;
+			num=Number(document.getElementById("txt1").value);
+			a=num*num;
+			while(b>0)
+				{
+					a=b%10;
+					nen=nen+a;
+					b=b/10;
+				}
+			if(nen==num)
+				{
+					alert("Neon Number");
+				}
+			else{
+				alert("Neon Number");
+			}
+		}
+		
+		
+		
+		</script>
+	
+	
+	</body>
+
+
+</html>

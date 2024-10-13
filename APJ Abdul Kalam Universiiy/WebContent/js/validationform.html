@@ -1,0 +1,194 @@
+<html>
+<head>
+<link href="boot/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="boot/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="boot/css/hover-min.css" rel="stylesheet"/>
+<script src="boot/js/jquery.js"></script>
+<script src="boot/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+<h4 class="text-success text-center">COMPLETE VALIDATION FORM</h4>
+<div class="col-md-6 m-auto d-block ">
+<form action="#" method="POST" onsubmit="return validation()" class="bgcolor-lightgray">
+
+<div class="form-group">
+<label>Name</label>
+  <input type="text" class="form-control" placeholder="Enter Name..." id="user"/>
+  <span id="spuser" class="text-danger font-weight-bold"></span>
+</div>
+  
+
+
+<div class="form-group">
+<label>Password</label>
+  <input type="password"  class="form-control" placeholder="Enter Password" id="pass"/>
+  <span id="sppass" class="text-danger font-weight-bold"></span>
+</div>
+
+<div class="form-group">
+<label>Confirm Password</label>
+  <input type="password" class="form-control" placeholder="Enter Confirm Password" id="cpass"/>
+  <span id="spcpass" class="text-danger font-weight-bold"></span>
+</div>
+<div class="form-group">
+<label>Picture</label>
+  <input type="file" class="form-control" placeholder="Choose Picture" id="image"/>
+  <span id="spimage" class="text-danger font-weight-bold"></span>
+</div>
+<div class="form-group">
+<label>DOB</label>
+  <input type="date" class="form-control" placeholder="Enter your dob" id="dob"/>
+  <span id="spdob" class="text-danger font-weight-bold"></span>
+</div>
+
+<div class="form-group">
+<label>Qulification</label>
+  <select class="form-control" id="qf"> 
+  <option>choose qualification</option>
+  <option>Heigh school</option>
+  <option>Intermediate (10th+2)</option>
+  <option>diploma</option>
+  
+  </select>
+  <span id="spqf" class="text-danger font-weight-bold"></span>
+</div>
+<div class="form-group">
+<label>Email</label>
+  <input type="text" class="form-control" placeholder="Enter Email" id="email"/>
+  <span id="spemail" class="text-danger font-weight-bold"></span>
+</div>
+<div class="form-group">
+<label>Mobile No.</label>
+  <input type="text" class="form-control" placeholder="Enter Mobile Number.." id="mobile"/>
+  <span id="spmobile" class="text-danger font-weight-bold"></span>
+</div>
+<input type="submit" value="submit" class="btn-success" onclick="validation()">
+<input type="reset" class="btn-info">
+
+
+</form>
+</div>
+</div>
+<script type="text/javascript">
+ function validation()
+ {
+    var name=document.getElementById("user").value;
+	var pass=document.getElementById("pass").value;
+	var cpass=document.getElementById("cpass").value;
+	var pic=document.getElementById("image").value;
+	
+	var dob=document.getElementById("dob").value;
+	var qf=document.getElementById("qf").value;
+	var email=document.getElementById("email").value;
+	var mobile=document.getElementById("mobile").value;
+     // validation name--------
+	  if(name == "")
+	{
+	  document.getElementById('spuser').innerHTML="** please enter name?";
+	  return false;
+	}
+	 
+	 if((name.length<=2)||(name.length>20))
+	{
+	  document.getElementById('spuser').innerHTML="** please enter name between 2 and 20 character";
+	 return false;
+	}
+	 if(!isNaN(name))
+	{   
+	  document.getElementById('spuser').innerHTML="** number is not allow";
+	  return false; 
+	}
+	
+	// validation password----------
+	  if(pass == "")
+	{
+	  document.getElementById('sppass').innerHTML="** please enter password?";
+	  return false;
+	}
+	if((pass.length<=5)||(pass.length>20))
+	{
+	document.getElementById('sppass').innerHTML="** password length must be between 5 to 20";
+	  return false;
+	
+	}
+	
+	
+	//confirm password-------
+       if(pass == "")
+	{
+	  document.getElementById('spcpass').innerHTML="** please enter password?";
+	  return false;
+	} 
+	
+	if(pass!=cpass)
+	{
+	  document.getElementById('spcpass').innerHTML="**  password are not maching";
+	  return false;
+	} 
+	
+	//picture------------
+	  if(pic == "")
+	{
+	  document.getElementById('spimage').innerHTML="** please select image";
+	  return false;
+	} 
+	//dob---------
+	    if(dob == "")
+	{
+	  document.getElementById('spdob').innerHTML="** please enter DOB";
+	  return false;
+	} 
+	
+	//qualification------
+	   if(qf == "")
+	{
+	  document.getElementById('spqf').innerHTML="** please select Qulification";
+	  return false;
+	} 
+	//email-----
+     if(email == "")
+	{
+	  document.getElementById('spemail').innerHTML="** please enter email id";
+	  return false;
+	} 
+	if(email.indexOf('@')<=0)
+	{
+	  document.getElementById('spemail').innerHTML="** @ invalid position.";
+	  return false;
+	}
+	if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-3)!='.'))
+	{
+	 document.getElementById('spemail').innerHTML="** (.) invalid position.";
+	  return false;
+	}
+	// mobile-------------
+	   if(mobile == "")
+	{
+	  document.getElementById('spmobile').innerHTML="** please enter mobile No.";
+	  return false;
+	} 
+	 if(isNaN(mobile))
+	 {
+	 document.getElementById('spmobile').innerHTML="** user must write digits only not character.";
+	  return false;
+	 }
+	 
+	 if(mobile.length!=10)
+	 {
+	 document.getElementById('spmobile').innerHTML="** user must write 10 digits.";
+	  return false;
+	 }
+	 
+ 
+}
+</script>
+</body>
+
+
+
+
+
+
+</html>

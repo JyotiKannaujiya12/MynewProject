@@ -1,0 +1,32 @@
+<html>
+<head></head>
+	<body>
+		<input type="text" id="txt1"/>
+		<input type="button" id="btn" value="print" onclick="table()"/>
+<script>
+	
+		function table()
+		{
+			var t=document.getElementById("txt1").value;
+		
+			var tab=1;
+			for(i=0;i<20;i++)
+				{
+					tab=i*t;
+					document.getElementById("dv").innerHTML+=t+"*"+i+"="+tab+"<br>";
+				}
+				
+		}
+		
+		
+		
+		</script>
+		
+		<div id="dv"></div>
+	
+	
+	
+	</body>
+
+
+</html>

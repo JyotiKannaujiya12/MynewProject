@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<servlet>
+<servlet-name>EmployeeDetails</servlet-name>
+<servlet-class>com.employee.EmployeeDetails</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>EmployeeDetails</servlet-name>
+<url-pattern>/employeedetails</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>EmployeeLogin</servlet-name>
+<servlet-class>com.elogin.EmployeeLogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>EmployeeLogin</servlet-name>
+<url-pattern>/employeelogin</url-pattern>
+
+</servlet-mapping>
+</web-app>

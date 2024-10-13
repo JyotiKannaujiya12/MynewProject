@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var num=926857;
+var esum=0;
+var osum=0;
+var rem;
+while(num!=0)
+	{
+	rem=num%10;
+	if(rem%2==0)
+		{
+		esum=esum+rem;
+		}
+	else
+	{
+		
+	osum=osum+rem;
+	}
+  num=Math.floor(num/10);
+	}
+	
+   document.write("Sum of digit even number:"+esum+"<br>")
+	   document.write("sum of digit odd number:"+osum)
+	   
+</script>
+</body>
+</html>

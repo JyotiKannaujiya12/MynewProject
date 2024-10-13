@@ -1,0 +1,39 @@
+<html>
+<head></head>
+	<body>
+	<h2>Example of Enrollment Generator</h2>
+		<hr>
+		Enter Enrollment Number
+		<input type="text" id="txtenroll" onchange="Enrollment()"/>
+		<br/><br/>
+		Your Enrollment Number
+		<input type="text" id="txtenroll2"/>
+		<script>
+		function Enrollment()
+			{
+				var txt=document.getElementById("txtenroll").value;
+				if(txt>0 && txt<=9)
+					{
+						document.getElementById("txtenroll2").value="API-00"+txt;
+					}
+				else if(txt>=10 && txt<=99)
+					{
+						document.getElementById("txtenroll2").value="API-0"+txt;
+					}
+				else
+					{
+						document.getElementById("txtenroll2").value="API-"+txt;
+					}
+			}
+		
+		
+		</script>
+		
+	
+	
+	
+	</body>
+
+
+
+</html>

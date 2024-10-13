@@ -1,0 +1,110 @@
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<script src="js/jquery.js" ></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	
+	
+	<style>
+		.fa-star-half{
+			font-size: 45px;
+			color: red;
+			cursor: pointer;
+		
+		}
+		#sp1,#sp2,#sp3,#sp4,#sp5
+		{
+			display: none;
+		}
+	</style>
+	<script>
+	function one()
+		{
+			var total;
+			total=document.getElementById("sp1").innerText;
+			document.getElementById("s1").style.color="blue";
+			document.getElementById("s2").style.color="red";
+			document.getElementById("s3").style.color="red";
+			document.getElementById("s4").style.color="red";
+			document.getElementById("s5").style.color="red";
+			alert(total);
+			
+		}
+		function two()
+		{
+			var total;
+			total=document.getElementById("sp2").innerText;
+			document.getElementById("s1").style.color="blue";
+			document.getElementById("s2").style.color="blue";
+			document.getElementById("s3").style.color="red";
+			document.getElementById("s4").style.color="red";
+			document.getElementById("s5").style.color="red";
+			alert(total);
+			
+		}
+		function three()
+		{
+			var total;
+			total=document.getElementById("sp3").innerText;
+			document.getElementById("s1").style.color="blue";
+			document.getElementById("s2").style.color="blue";
+			document.getElementById("s3").style.color="blue";
+			document.getElementById("s4").style.color="red";
+			document.getElementById("s5").style.color="red";
+			alert(total);
+			
+		}
+		function four()
+		{
+			var total;
+			total=document.getElementById("sp4").innerText;
+			document.getElementById("s1").style.color="blue";
+			document.getElementById("s2").style.color="blue";
+			document.getElementById("s3").style.color="blue";
+			document.getElementById("s4").style.color="blue";
+			document.getElementById("s5").style.color="red";
+			alert(total);
+			
+		}
+		function five()
+		{
+			var total;
+			total=document.getElementById("sp5").innerText;
+			document.getElementById("s1").style.color="blue";
+			document.getElementById("s2").style.color="blue";
+			document.getElementById("s3").style.color="blue";
+			document.getElementById("s4").style.color="blue";
+			document.getElementById("s5").style.color="blue";
+			document.getElementById("s5").style.color="blue";
+			alert(total);
+			
+		}
+	
+	
+	</script>
+	
+	
+	</head>
+	<body>
+	<h2>Example of halfstar rating</h2>
+   <hr>
+		<center>
+		<span id="s1" class="fa fa-star-half" onclick="one()" ></span>
+		<span id="s2" class="fa fa-star-half" onclick="two()"></span>
+		<span id="s3" class="fa fa-star-half" onclick="three()"></span>
+		<span id="s4" class="fa fa-star-half" onclick="four()"></span>
+		<span id="s5" class="fa fa-star-half" onclick="five()"></span>
+	<span id="sp1" class="fa fa-star">1</span>
+		<span id="sp2" class="fa fa-star">2</span>
+		<span id="sp3" class="fa fa-star-half">3</span>
+		<span id="sp4" class="fa fa-star-half">4</span>
+		<span id="sp5" class="fa fa-star-half">5</span>
+	</center>
+	
+	</body>
+
+
+
+</html>

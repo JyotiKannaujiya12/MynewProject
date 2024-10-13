@@ -1,0 +1,44 @@
+<html>
+<head></head>
+
+<body>
+	<form action="" method="POST" onsubmit="return mobile()">
+	Enter Mobile Number
+		
+	<input type="text" id="txtmobile"/>
+		<span id="sp">*</span>
+		<br/>
+		
+		<input type="submit" value="Valid"/>
+	</form>
+	
+	<script>
+		function mobile()
+		{
+			var mobile=document.getElementById("txtmobile").value;
+			if(mobile.length==10)
+			{
+			for(i=0;i<9;i++)
+				{
+					var mob=mobile.charCodeAt(i);
+					if(mob==54||mob==55||mob==56||mob==57)
+						{
+							return true;
+						}
+					else{
+						document.getElementById("sp").innerHTML="Please Enter Indian mobile number";
+						document.getElementById("sp").style.color="red";
+						return false;
+					}
+				}
+		}
+			else{
+				document.getElementById("sp").innerHTML="Please Enter sould be only 10 digits mobile number";
+						document.getElementById("sp").style.color="red";
+						return false;
+			}
+		}
+		</script>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head></head>
+	<body onload="mytime()">
+	<script>
+		function mytime()
+		{
+			var d=new Date();
+			//var dd=d.toLocaleDateString();
+			//alert(dd);
+			var dd=d.toLocaleTimeString();
+			document.getElementById("d").innerHTML="Time is:"+dd;
+			
+		}
+		//window.setTimeout("mytime()",5000);
+		//window.clearTimeout("mytime()",1000);
+		window.setInterval("mytime()",1000);
+		
+		
+		</script>
+		<h1 id="d"></h1>
+	
+	
+	</body>
+
+
+</html>

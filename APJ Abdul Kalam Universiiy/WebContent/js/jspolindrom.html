@@ -1,0 +1,37 @@
+<html>
+<head></head>
+	<body>
+	<h2>Polindrom Number</h2>
+		<hr>
+		Enter Number<br>
+		<input type="text" id="txt1"/>
+		<input type="button" id="btn" onclick="polindrom()" value="print"/>
+		<script>
+		function polindrom()
+			{
+				var poli=0,a,b,c,d,num;
+				num=Number(document.getElementById("txt1").value);
+			temp=num;
+			while(temp>0)
+				{
+					a=temp%10;
+					temp=parseInt(temp/10);
+					poli=poli*10+a;
+				}
+			if(poli==num)
+				{
+					alert("polindrom Number");
+				}
+			else{
+				alert("not polindrom Number")
+			}
+			}
+		
+		</script>
+	
+	
+	
+	</body>
+
+
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head></head>
+<body> 
+	<h2>Form Validation</h2>
+	<hr>
+	<br>
+	<form action="" method="POST" onsubmit="return email()">
+		Enter Email
+		<input type="text" id="txtemail" onkeyup="return email()"/>
+		<span id="sp">*</span>
+		<br/>
+		
+		<input type="submit" value="Valid"/>
+	
+	<script>
+	function email()
+		{
+		var count=0;var dot=0;
+			var mail=document.getElementById("txtemail").value;
+			for(i=0;i<mail.length;i++)
+				{
+					if(mail.charCodeAt(i)==64)
+						{
+							count++;
+						}
+				}
+			if(count==1)
+				{
+					em=mail.indexOf('@');
+					for(i=em+3;i<mail.length;i++)
+						{
+							if(mail.charCodeAt(i)==46)
+								{
+									dot++;
+								}
+						}
+					if(dot==1)
+						{
+							return true;
+						}
+					else
+					{
+						document.getElementById("sp").innerHTML="Email should be contain only one dot(.)";
+						return false;
+					}
+				}
+			else
+			{
+				document.getElementById("sp").innerHTML="Email should be contain only one @";
+						return false;
+				
+			}
+			
+		
+		}
+	
+	
+	
+	
+	</script>
+	
+	</form>
+	
+	</body>
+
+
+
+</html>

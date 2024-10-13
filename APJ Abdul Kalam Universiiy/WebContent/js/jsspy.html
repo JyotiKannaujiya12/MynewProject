@@ -1,0 +1,39 @@
+<html>
+<head></head>
+	<body>
+	<h2>Spy Number</h2>
+		<hr>
+		Enter Number<br>
+		<input type="text" id="txt1"/>
+		<input type="button" id="btn" onclick="spy()" value="print"/>
+		<script>
+		function spy()
+			{
+				var num,spy=0,a,b=1;
+				num=Number(document.getElementById("txt1").value);
+				num=a;
+				while(num>0)
+					{
+						a=num%10;
+						spy=spy+a;
+						b=b*a;
+						num=num/10;
+					}
+				if(spy==num)
+					{
+						alert("spy Number");
+					}
+				else{
+					alert("not spy Number");
+				}
+			}
+		
+		
+		
+		</script>
+	
+	
+	</body>
+
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>College Project</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+<style>
+.mySlides {display:none;}
+</style>
+
+</head>
+<body>
+	<!--<div class="single-slider" style="background-image: url('images.jpg');"></div>
+	<!-Hedder-->
+		<center>
+			
+		<img src="cooltext459795976698787.png" style="top: 100px;">
+		</center>
+		
+	</div>
+	<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="department.html" target="myframe">Department</a></li>
+  <li><a href="AboutUs.html" target="myframe">About</a></li>
+  <li><a href="FeeStructure.html" target="myframe">Fee Structure</a></li>
+   <li><a href="galley.html" target="myframe">Gallery</a></li>
+   <li><a href="#" target="myframe">Contact Us</a></li>
+ 
+</ul>
+<hr>
+
+<div style="position: absolute;top: 420px; left: 200px;">
+	<iframe height="500" width="1250" name="myframe" style="border: 0px;"></iframe>
+	
+</div>
+
+	<div style="position: absolute; top: 10px; left:20px; width: 100%; height: 100px; ">
+		
+	<img src="Blue Gold Elegant Clean Badge University Logo.png" width="100px" height="70px">
+	
+	</div>
+	<!--<div style="">
+		
+	<img style="position: absolute; height: 700px; width: 1500px;" src="download.jpg">
+	<h1>Hello Everyone Welcome to My College</h1>
+	</div>
+	
+	
+	<!--slider img -->
+	<center>
+		
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="images.jpg" style="width:100%">
+  <img class="mySlides" src="download.jpg" style="width:100%">
+  <img class="mySlides" src="Reasons-to-go-to-college.webp" style="width:100%">
+</div>
+	</center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+	<!--slider img end-->
+	
+	<!--footer-->
+	<div style="background-color: #5f9ea0; width: 100%; position:fixed; bottom: 0px; height: 100px;">
+	
+		<p style="padding-top:60px; text-align: center;">Copyright @ 2024</p>
+	</div>
+
+
+</body>
+</html>

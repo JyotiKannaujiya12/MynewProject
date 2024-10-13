@@ -1,0 +1,209 @@
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+		#d1{
+			border: 1px solid black;
+			height: 750px;
+			margin-top: 20px;
+		}
+		
+	
+	
+	</style>
+	</head>
+	<body>
+		<div class="col-sm-row"></div>
+		<div class="col-sm-12">
+		<div class="col-sm-3"></div>
+			<div class="col-sm-6" id="d1">
+				<form action="" method="POST"  onsubmit="return validation()">
+		<font style="font-size: 30px; color: orangered;"><center>Form Validation</center></font>
+				<hr style="border: 1px solid black;">
+			      <span style="color: red;">Name</span>  <br>
+					<input type="text"  id="txt" class="form-control" name="user"/>
+					<span id="user" class="text-danger font-weight-bold"></span><br>
+			    <span style="color: red;">Password</span>  <br>
+					<input type="password" id="txtpass" class="form-control"/>
+					<span id="pass"></span><br>
+			     <span style="color: red;">Confirm Password</span>  <br>
+					<input type="password" id="txtcpass"  class="form-control" name="user" />
+					<span id="cpass"></span><br>
+			 
+				<span style="color: red;">Enter Email</span> <br>
+		<input type="text" id="txtemail"  class="form-control" />
+					<span id="email"></span><br>
+				<span style="color: red;">DOB</span> 	<br>
+		<input type="date" id="dob"  class="form-control" />
+					<span id="txtdob"></span><br>
+				<span style="color: red;">Enter Mobile Number</span> <br>
+	      <input type="text" id="txtmobile"  class="form-control" />
+					<span id="mobile"></span><br>
+					   <span style="color: red;" id="Qf">Qualification</span>
+					<select class="form-control">
+						<option>Choose Qualification</option>
+						<option>High School</option>
+						<option>Intermediot</option>
+						<option>Graduation</option>
+						<option>Diploma</option>
+						</select>
+					<span id="Qf"></span><br><br>
+					<span style="color: red;"> Please choose file</span> 
+	            <input type="file" id="fupic" class="form-control"/><span id="pic"></span><br>
+				<input type="submit" value="submit" class="btn btn-success"/>
+					<input type="reset" value="reset" class="btn btn-info"/>
+				</form>	
+					
+			</div>
+			<div class="col-sm-4"></div>
+		
+		
+		</div>
+		<script>
+		function validation()
+			{
+				var user=document.getElementById('txt').value;
+				var pass=document.getElementById('txtpass').value;
+				var cpass=document.getElementById('txtcpass').value;
+				var email=document.getElementById('txtemail').value;
+				var dob=document.getElementById('txtdob').value;
+				var mobile=document.getElementById('txtmobile').value;
+				var Qf=document.getElementById("Qf").value;
+				var pic=document.getElementById('fupic').value;
+				if(user=="")
+					{
+						document.getElementById("user").innerHTML="** please enter name";
+						
+						return false;
+					}
+				if((user.length<=2)||(user.length>20)){
+									  
+								document.getElementById("user").innerHTML="** user length must be between 2 and 20";
+						
+						return false;	  
+				}
+						
+				   if(!isNaN(user)){
+									  
+								document.getElementById("user").innerHTML="** only characters are allowed";
+						
+						return false;	  
+									  
+									  }
+				if(pass=="")
+					{
+						document.getElementById("pass").innerHTML="** please enter Password";
+						
+						return false;
+					}
+		
+			if(pass == "")
+	{
+	  document.getElementById('pass').innerHTML="** please enter password?";
+	  return false;
+	}
+	if((pass.length<=7)||(pass.length>20))
+	{
+	document.getElementById('pass').innerHTML="** password length must be between 7 to 20";
+	  return false;
+	
+	}
+       if(cpass == "")
+	{
+	  document.getElementById('cpass').innerHTML="** please enter password?";
+	  return false;
+	} 
+	
+			if(cpass=="")
+					{
+						document.getElementById("cpass").innerHTML="** please enter Confiram Password";
+						return false;
+					}
+				if(pass!=cpass)
+	{
+	  document.getElementById('cpass').innerHTML="**  password are not maching";
+	  return false;
+	} 
+		
+				if(email=="")
+					{
+						document.getElementById("email").innerHTML="** please enter Email";
+						return false;
+					}
+				 if(email == "")
+	{
+	  document.getElementById('email').innerHTML="** please enter email id";
+	  return false;
+	} 
+	if(email.indexOf('@')<=0)
+	{
+	  document.getElementById('email').innerHTML="** @ invalid position.";
+	  return false;
+	}
+	if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-3)!='.'))
+	{
+	 document.getElementById('email').innerHTML="** (.) invalid position.";
+	  return false;
+	}
+				if(mobile=="")
+					{
+						document.getElementById("mobile").innerHTML="** please enter mobile";
+						return false;
+					}
+				if(mobile.length==10)
+			{
+			for(i=0;i<9;i++)
+				{
+					var mob=mobile.charCodeAt(i);
+					if(mob==54||mob==55||mob==56||mob==57)
+						{
+							return true;
+						}
+					else{
+						document.getElementById("mobile").innerHTML="Please Enter Indian mobile number";
+						document.getElementById("mobile").style.color="red";
+						return false;
+					}
+				}
+		}
+			else{
+				document.getElementById("mobile").innerHTML="Please Enter sould be only 10 digits mobile number";
+						document.getElementById("mobile").style.color="red";
+						return false;
+			}
+				if(pic=="")
+					{
+						document.getElementById("fupic").innerHTML="** please enter image";
+						
+						return false;
+					}
+				 if(dob=="")
+					{
+						document.getElementById("dob").innerHTML="** please enter DOB";
+						
+						return false;
+					}
+				  if(Qf == "")
+	{
+	  document.getElementById('Qf').innerHTML="** please select Qulification";
+	  return false;
+	} 
+			}
+		
+		
+						
+						
+						
+		
+		
+		</script>
+	</body>
+
+
+
+
+
+</html>

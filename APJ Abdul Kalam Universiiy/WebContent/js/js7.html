@@ -1,0 +1,49 @@
+<html>
+<head></head>
+	<body>
+		<h2>Password</h2>
+		<hr>
+	Enter Password<br>
+		<input type="password" id="txtpass"/>
+		<input type="button" onclick="show()" value="show" id="btn"/><br/>
+Enter confin password<br>
+		
+	<input type="password" id="txtcpass"/><br/>
+		<input type="button" onclick="valid()" value="Go" id="btngo"/>
+<br/>
+		<span id="sp"></span>
+<script>
+		function show()
+	{
+		var txt=document.getElementById("txtpass").type;
+		if(txt=="password")
+			{
+				document.getElementById("txtpass").type="text";
+				document.getElementById("btn").value="hide";
+			}
+		if(txt=="text")
+			{
+			document.getElementById("txtpass").type="password";
+				document.getElementById("btn").value="show";	
+			}
+	}
+		
+		function valid()
+	{
+		var pass=document.getElementById("txtpass").value;
+		var cpass=document.getElementById("txtcpass").value;
+		if(pass==cpass)
+			{
+				document.getElementById("sp").innerHTML="valid";
+			}
+		else{
+			document.getElementById("sp").innerHTML="invalid";
+		}
+	}
+		
+		
+		</script>	
+	</body>
+
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head></head>
+	<body>
+	Enter sentence<br>
+		<input type="text" id="txt1" onkeyup="demo()"/>
+		<br>
+		<span id="sp">Type....</span>
+		<script>
+		function demo()
+			{
+				var txt=document.getElementById("txt1").value;
+				var len=txt.length;
+				if(len>0 && len<=5)
+					{
+					document.getElementById("sp").style.color="red";	
+					}
+				else if(len>=6 && len<=10)
+					{
+						document.getElementById("sp").style.color="blue";
+					}
+				else{
+					document.getElementById("sp").style.color="green";
+				}
+				document.getElementById("sp").innerText=txt;
+			}
+		
+		
+		
+		</script>
+		
+	
+	
+	
+	</body>
+
+
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head></head>
+	<body onload="mydatetime()">
+	<script>
+		function mydatetime()
+		{
+			var d=new Date();
+			var dd=d.getDate();
+			var mm=d.getMonth();
+			var yy=d.getFullYear()+1;
+			var hh=d.getHours();
+			var mi=d.getMinutes();
+			var ss=d.getSeconds()+1;
+			var check=d.toLocaleDateString();
+			var check2=d.toLocaleTimeString();
+			alert(check);alert(check2);
+		document.getElementById("spdate").innerText="Date is:"+dd+"/"+mm+"/"+yy;
+		document.getElementById("sptime").innerText="Time is:"+hh+":"+mi+":"+ss;
+		}
+		</script>
+	   <span id="spdate"></span><br>
+		<span id="sptime"></span>
+	
+	
+	</body>
+	  
+
+
+
+</html>

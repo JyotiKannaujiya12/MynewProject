@@ -1,0 +1,16 @@
+<html>
+<head></head>
+	<body>
+	Enter sentence<br>
+		<input type="text" id="txt1" onkeyup="demo()"/>
+		<br>
+		<span id="sp">Type....</span>
+		<script>
+		function demo()
+			{
+				var txt=document.getElementById("txt1").value;
+				document.getElementById("sp").innerText=txt;
+			}
+		</script>
+	</body>
+</html>

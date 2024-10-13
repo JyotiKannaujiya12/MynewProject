@@ -1,0 +1,38 @@
+<html>
+<head></head>
+<body>
+	<h2>Example of file uploading</h2>
+	<hr>
+	Please choose file
+	<br>
+	<input type="file" id="fupic"/>
+	<input type="button" value="Go" onclick="pic()"/>
+	<script>
+	function pic()
+		{
+			var fupic=document.getElementById("fupic").value;
+			var sz=document.getElementById("fupic").files[0].size;
+			alert(sz);
+			lst=fupic.lastIndexOf(".")+1;
+			cu=fupic.substring(lst);
+			cut=cu.toLowerCase();
+			if(cut=="png"||cut=="jpg"||cut=="jpeg")
+				{
+					alert("valid");
+				}
+			else
+				{
+					alert("Invalid");
+				}
+		}
+	
+	
+	
+	</script>
+	
+	
+	
+	</body>
+
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head></head>
+	<body>
+	<h2>Perfect Number</h2>
+		<hr>
+		Enter Number
+		<input type="text" id="txt1"/>
+		<input type="button" id="btn" onclick="parfect()" value="print"/>
+	<script>
+		function parfect()
+		{
+			var num,par=0,a;
+			num=Number(document.getElementById("txt1").value);
+			a=1;
+			while(a<num)
+				{
+					if(num%a==0)
+						{
+							par=par+a;
+						}
+					a++;
+				}
+			if(par==num)
+				{
+					alert("parfect");
+				}
+			else
+				{
+					alert("not parfect");
+				}
+		}
+		
+		
+		
+		</script>
+	
+	
+	</body>
+
+
+
+</html>
